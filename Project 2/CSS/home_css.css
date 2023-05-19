@@ -1,0 +1,152 @@
+/*Font links */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container{
+    width: 100%;
+
+}
+
+.navbar{
+    width: 100%;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgb(72, 116, 167) , rgb(213, 142, 142));
+}
+#logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Oswald;
+    padding:  0 0 0 20px;
+    margin: 0 0 0 20px;
+}
+
+.navLinks{
+    padding: 10px 0 0 0 ;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+li,a{
+    text-decoration: none;
+    font-family: Playfair Display;
+    font-weight: bold;
+    color: rgb(87, 49, 49);
+    transition: font-size 8ms;
+}
+
+.links{
+    padding-right: 30px;
+}
+.active{
+    padding-right: 30px;
+}
+li:hover{
+    font-size: 22px;
+}
+
+
+/* collection*/
+
+.collection{
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(72, 116, 167) , rgb(213, 142, 142));
+}
+
+#collectionTitle{
+    padding-top: 20px;
+    font-family: Oswald;
+    word-spacing:5px;
+    letter-spacing:5px;
+    text-decoration: solid black;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.items{
+    padding-top: 20px;
+}
+.line{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    
+    width: 275px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:scale 2s;
+}
+.img{
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image{
+    width: 100x;
+    height: 120px;
+}
+
+.dis{
+    display: flex;
+    justify-content: space-between ;
+    margin: 10px;
+}
+
+.name{
+    font-family: Oswald;
+    font-size: 15px;
+
+}
+
+.price{
+    font-family: Oswald;
+    font-size: 15px;
+}
+
+.rating-bar {
+    margin: 10px;
+    display: inline-block;
+    font-size: 24px;
+    color: #f2b01e;
+  }
+  
+  .star {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .star:hover:before,
+  .star:hover ~ .star:before {
+    content: "\2605";
+    position: absolute;
+    color: #f2b01e;
+  }
+  
+  .star:before {
+    content: "\2606";
+    position: absolute;
+  }
+
+.box:hover{
+    scale: 1.1;
+}
